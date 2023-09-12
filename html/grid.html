@@ -3,11 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid</title>
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+<header>
+        <div class="header">
+            <div class="logo">
+                <h3 class="name" id="new">New</h3>
+                <video src="/img/icon.mp4" class="icon" id="icon" autoplay muted loop></video>
+                <h3 class="name" id="new">Style</h3>
+            </div>
+            <div class="link_nav" id="navegação">
+                <a class="link_nav" href="#ferramentas">Ferramentas</a>
+                <a class="link_nav" href="#calculadora">Calculadora</a>
+                <a class="link_nav" href="#relogio">Relógio Dígital</a>
+                <a class="link_nav" href="#sobre">Sobre nós</a>
+                <a class="link_nav" href="#contato">Contato</a>
+            </div>
+        </div>
+</header>
+<section id="ferramentas">
+    <div class="container" id="ferramenta">
+        <div class="box">
+            <p>Este é o meu site. Fiz ele afim testar meus conhecimentos sobre html e css.</p>
+        </div>
+    </div>
+</section>
+<section id="calculadora">
+    <div class="conteiner">
+        <div class="box" id="calculadora">
+            <p>Calculadora aqui!</p>
+        </div>
+    </div>
+</section>
+<section id="relogio">
+    <div class="container">
+        <div class="box" id="relogio">
+            <h1 id="um">Relógio Digital</h1>
+                    <div class="relogio">
+                        <div class="">
+                            <span id="horas">00</span>
+                            <span class="tempo">Horas</span>
+                        </div>            
 
-    
+                        <div class="">
+                            <span id="minutos">00</span>
+                            <span class="tempo">Minutos</span>
+                        </div>
 
+                        <div class="">
+                            <span id="segundos">00</span>
+                            <span class="tempo">Segundos</span>
+                        </div>
+                    </div>
+                    <script src="/Relogio/assets/arquivo.js"></script>
+        </div>
+    </div>
+</section>
+<section id="sobre">
+    <div class="container">
+        <div class="box" id="sobre">
+            <p>Sobre aqui!</p>
+        </div>
+    </div>
+</section>
+<footer id="contato">
+    <div class="footer">
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <video src="/img/icon.mp4" class="logo-footer" muted autoplay loop></video>
+                
+                <p>Isso é tudo sobre seus sonhos...</p>
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Link 1</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Link 2</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Link 3</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Donates</h3>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all right reservet
+        </div>
+</footer>
 </body>
 </html>
