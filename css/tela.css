@@ -151,9 +151,9 @@ body {
 }
 
 .img {
-  height: auto;
-  width: auto;
-  
+  height: 50%;
+  width: 200px;
+  border-radius: 15%;
   box-shadow: 1px 1px 15px var(--color-neutral-70);
 }
 
