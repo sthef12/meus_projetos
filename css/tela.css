@@ -97,7 +97,6 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: var(--color-neutral-52);
   border-radius: 20px;
   margin: 10px;
 }
