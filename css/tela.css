@@ -151,8 +151,7 @@ body {
 }
 
 .img {
-  height: 50%;
-  width: 200px;
+  max-height: 50px;
   border-radius: 15%;
   box-shadow: 1px 1px 15px var(--color-neutral-70);
 }
