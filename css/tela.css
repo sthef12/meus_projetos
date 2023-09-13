@@ -95,7 +95,7 @@ body {
 .box_ferramentas {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   border-radius: 20px;
   margin: 10px;
 }
