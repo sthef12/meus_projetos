@@ -83,87 +83,86 @@ body {
 #principal{
   background-color: var(--color-neutral-80);
   display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: 300px 1fr;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 50% 1fr;
+  
 }
 
-/*section "conteudo_principal"*/
+/* "conteudo_principal"*/
 .box_barra {
   background-color: var(--color-neutral-60);
+  grid-row: 1/3;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  height: 100vh;
 }
 
-.box_principal {
+.box_ferramentas {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 1fr;
-  background-color: #25d366;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: var(--color-neutral-52);
+  border-radius: 20px;
+  margin: 10px;
 }
 
-.box_conteudo {
-  background-color: #8A2BE2;
-  grid-column: 1/3;
+#relogio {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 10px 1 1 10px;
 }
-/*
-.box_efeitos {
+#calendario {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 10px 10px 1 1;
+}
+#cronometro {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 1 1 10px 10px;
+}
+#ideias {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 1 10px 10px 1;
+}
+
+.ferramentas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-neutral-50);
+  color: var(--color-neutral-40);
+  width: auto;
+  height: auto;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.box_sobre {
+  background-color: var(--color-neutral-51);
+  grid-column: 2/3;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  background-color: var(--color-neutral-50);
-  border-radius: 10px;
   align-items: center;
-  width: 50%;
-}*/
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
 
-
-
-
-/*fim section "principal"*/
-/*section "sobre"*/
-hr {
-  border-color: transparent;
-}
-.img {
-    height: 250px;
-    width: 200px;
-    border-radius: 15%;
-}
-
-
-
-.box_content {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 40px 20px 40px 20px ;
-    background-color: var(--color-neutral-52);
-    padding: 20px;
-    border-radius: 40px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.box {
-    display: flex;
-
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100vh;
-    padding: 20px;
-    height: 25%;
-    justify-content:space-around;
-    margin: 20px;
-    
 }
 
 .texto {
-    margin: 10px;
-    
+  margin: 10px;
 }
-.texto #teste {
-    
-    margin: 10px;
+
+.img {
+  height: 250px;
+  width: 200px;
+  border-radius: 15%;
+  box-shadow: 1px 1px 15px var(--color-neutral-70);
 }
-/*fim section "sobre"*/
 
 /*css footer*/
 .logo-footer {
