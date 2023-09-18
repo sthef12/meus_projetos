@@ -10,6 +10,9 @@ let guessedWord = "_".repeat(word.length);
 // Número de tentativas restantes
 let attemptsLeft = 6;
 
+// Variável para contar a quantidade de letras na palavra
+let letterCount = word.length;
+
 // Elementos HTML
 const wordDisplay = document.getElementById("word-display");
 const guessInput = document.getElementById("guess-input");
@@ -70,5 +73,7 @@ guessButton.addEventListener("click", () => {
     }
 });
 
-
-
+// Exibir a quantidade de letras na palavra escolhida no formato textContent
+const letterCountMessage = `Esta palavra tem ${letterCount} letra${letterCount !== 1 ? 's' : ''}.`;
+const letterCountDisplay = document.getElementById("letter-count");
+letterCountDisplay.textContent = letterCountMessage

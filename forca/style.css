@@ -6,64 +6,110 @@
 
 body {
     background-color: black;
-}
-.container {
     display: grid;
-    
-    grid-template-rows: 100px 150px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 300px 1fr;
+}
+header {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+section {
+    grid-row: 2/3;
+    height: 700px;
+    margin: 10px;
+}
+footer {
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+:root {
+    /* Color Theme Swatches in Hex */
+    --color-UIUX-1-hex: #0CC8F2;
+    --color-UIUX-2-hex: #049DD9;
+    --color-UIUX-3-hex: #F18DF2; 
+    --color-UIUX-4-hex: #D930AC; 
+    --color-UIUX-5-hex: #0D0D0D; 
+    /*-color---color-* Color Theme Swatches in RGBA */
+    --color-UIUX-1-rgba: rgba(242, 231, 87, 1);
+    --color-UIUX-2-rgba: rgba(242, 200, 75, 1);
+    --color-UIUX-3-rgba: rgba(242, 111, 82, 1);
+    --color-UIUX-4-rgba: rgba(242, 100, 87, 1);
+    --color-UIUX-5-rgba: rgba(12, 12, 12, 1);
+}
+
+.box_barra {
+    grid-row: 1/2;
+    padding: 20px;
+    height: 650px;
+}
+
+#jogo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
 
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 650px;
 
-    padding: 40px;
+    padding: 50px;
+    gap: 20px;
     border-radius: 20px;
-    background-color: rgba(0, 255, 255, 0.718);
-    box-shadow: 1px 1px 50px rgba(0, 255, 255, 0.3);
+    background-color: var(--color-UIUX-1-hex);
+    box-shadow: 1px 1px 35px var(--color-UIUX-2-hex);
 }
 
 .box {
-    grid-column: 1/3;
-    grid-row: 1/2;
     text-align: center;
+    color: var(--color-UIUX-4-hex);
+    text-shadow:1px 1px 1px var(--color-UIUX-5-hex);
 }
-#word-display {
-    font-size: 36px;
-    grid-row: 1/2;
-    grid-column: 1/3;
-    color: black;
+
+#letter-count {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.palavra {
+    font-size: 46px;
+   
+    color: var(--color-UIUX-5-hex);
     padding: 50px;
     text-align: center;
 }
 
 .adivinhar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    grid-row: 2/3;
-    grid-column: 1/3;
+    
     margin-top: 10px;
     gap: 15px;
 }
 
 .contador {
-    position: absolute;
-    top: 70%;
-    left: 30%;
-    transform: translate(-10%, -10%);
+    text-align: center;
 }
 
 .tentativas {
-    padding: 15px;
+    margin-bottom: 30px;
 }
 .letras {
-    background-color:azure;
+    background-color:var(--color-UIUX-3-hex);
     padding: 10px;
-    text-align: center;
+    text-align: start;
+    height: 90px;
+    color: var(--color-UIUX-5-hex);
 }
 
 
@@ -74,11 +120,19 @@ body {
 }
 
 #guess-input {
-    border-color: transparent;
+    background-color: var(--color-UIUX-1-hex);
+    border-color: var(--color-UIUX-5-hex);
     width: 30px;
-    font-size: 18px;
+    font-size: 28px;
     margin-right: 10px;
     text-align: center;
+    width: 50px;
+    height: 50px;
+}
+#guess-input:hover {
+    border-color: var(--color-UIUX-5-hex);
+    background-color: var(--color-UIUX-2-hex);
+
 }
 
 #guess-button {
@@ -87,21 +141,22 @@ body {
     cursor: pointer;
     padding: 15px;
     border-radius: 20px;
-    width: 50%;
-    background-color: black;
-    color: aqua;
+    width: 150px;
+    background-color: var(--color-UIUX-4-hex);
+    color: var(--color-UIUX-5-hex);
     border: transparent;
     transition: all 0.2s ease-in-out;
 }
 #guess-button:hover {
-    box-shadow: 0 0 15px aqua, inset 0 0 15px aqua;
-    text-shadow: 0 0 15px aqua;
+    color: var(--color-UIUX-2-hex);
+    box-shadow: 0 0 15px var(--color-UIUX-3-hex);
+    
 }
 
 #message {
     font-size: 18px;
     font-weight: bold;
-    color: rgb(255,0,0);
+    color: var(--color-lab-3);
     height: 30px;
     grid-column: 1/3;
     display: flex;
