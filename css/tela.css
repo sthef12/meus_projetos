@@ -76,15 +76,11 @@ body {
 /*css section*/
 
 .container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-neutral-70);
-}
-#principal{
   background-color: var(--color-neutral-80);
   display: grid;
-  grid-template-columns: 30% 1fr;
-  grid-template-rows: 50% 1fr;
+  grid-template-columns: 30% 50%;
+  grid-template-rows: 50% 50%;
+  height: 100vh;
   
 }
 
@@ -95,7 +91,6 @@ body {
   padding: 20px;
   border-radius: 20px;
   margin: 10px;
-  height: 100vh;
 }
 
 .box_ferramentas {
@@ -143,7 +138,7 @@ body {
   background-color: var(--color-neutral-51);
   grid-column: 2/3;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -157,8 +152,7 @@ body {
 }
 
 .img {
-  height: 250px;
-  width: 200px;
+  max-height: 50px;
   border-radius: 15%;
   box-shadow: 1px 1px 15px var(--color-neutral-70);
 }
