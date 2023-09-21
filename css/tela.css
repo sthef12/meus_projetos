@@ -92,7 +92,8 @@ nav.barra-lateral:hover {
 .bnt-expandir {
   width: 100%;
   padding-left: 10px;
-  
+  display: flex;
+  flex-direction: row;
 }
 
 .bnt-expandir > i {
